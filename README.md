@@ -17,3 +17,7 @@ export TWILIO_AUTH_TOKEN='cdef'
 # Run the app and pass your Twilio number
 node app.js '+15555551212' 
 ```
+
+### Why a new number?
+
+Purchasing a new number keeps the query to Twilio simple. We just ask for all SMS messages. If you use an existing number, you might need to constrain the query to Twilio to today's SMS messages using the [DateSent](https://www.twilio.com/docs/api/rest/sms#list-get-filters) parameter. You might also need to further filter the results that you get from Twilio if there are any SMS messages that we're part of this raffle. Just something to keep in mind.
