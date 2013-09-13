@@ -1,0 +1,15 @@
+{
+  "name": "node-raffle",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "twilio": "*",
+    "underscore": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
